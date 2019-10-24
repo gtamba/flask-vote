@@ -1,0 +1,33 @@
+{
+  "users": [
+  	{
+      "email": "admin@admin.com",
+      "password": "sudo",
+      "is_privileged": true
+    },
+    {
+      "email": "abe.lincoln@gmail.com",
+      "password": "test123"
+    },
+    {
+      "email": "bobama@yahoo.in",
+      "password": "tester"
+    },
+    {
+      "email": "bugsbunny@gmail.com",
+      "password": "wabbit"
+    },
+    {
+      "email": "batman@gmail.com",
+      "password": "darkness"
+    },
+    {
+      "email": "chadwick@test.com",
+      "password": "testas"
+    },
+    {
+      "email": "jonted@abc.com",
+      "password": "abc123"
+    }
+  ]
+}

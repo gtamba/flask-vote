@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Voting Candidate List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="logout">Logout</a></li>
+                </ul>
+            </nav>
+            <h1>Voting Application</h1>
+        </div>
+        <div class="panel panel-default">
+             <div class="panel-heading">
+                  <h2>Candidate Vote Tally</h2>
+             </div>
+             <div class="panel-body">
+                <form id="choice" name='form' method="POST" action="">
+                <table class="table table-striped">
+                <tbody>
+                {% for candidate in candidates %}
+                   <tr>
+                       <td>{{ candidate.name }} | Votes : {{ candidate.votes }}</td>
+                   </tr>
+                {% endfor %}
+                </tbody>
+                </table>
+                </form>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

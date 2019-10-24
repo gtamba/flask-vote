@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title> Voting Login Page </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container", align='center'>
+      <h1> Voter Login </h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Email ID" name="email" value="{{
+          request.form.email}}">
+        <p></p>
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <p></p>
+        <input class="btn btn-success", type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
