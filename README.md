@@ -1,6 +1,7 @@
 ## Local deployment
 
 Install the dependencies
+    
     make install-deps
 
 
@@ -18,3 +19,6 @@ Run Unit Tests:
 Clean Database to repopulate on App Startup
 
     make clean-db
+
+
+User Credentials in `mock-data/users.json` , admin email is `admin@admin.com`
