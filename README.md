@@ -1,6 +1,6 @@
 ## Local deployment
 
-Install the dependencies
+Install the dependencies (Python 3.4.x)
     
     make install-deps
 
